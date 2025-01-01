@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Assistent</title>
+    <script
+      src="https://kit.fontawesome.com/2e2b106846.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <button class="speech-mode-btn">Speech Mode</button>
+      </div>
+      <div class="right">
+        <a href="/login">Log In</a>
+        <a href="/signup">Sign Up</a>
+      </div>
+    </header>
+    <main>
+      <div class="chat-box"></div>
+      <div class="input-box">
+        <div class="attachments">
+          <i class="fa-solid fa-paperclip"></i>
+        </div>
+        <form class="text-box" id="input-form">
+          <input
+            type="text"
+            placeholder="Type your message here..."
+            name="message"
+            id="message"
+          />
+        </form>
+        <div class="send-box">
+          <button class="mic-btn">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <button class="submit-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/js/ai.js"></script>
+  <script src="/js/index.js" type="module" defer></script>
+</html>
